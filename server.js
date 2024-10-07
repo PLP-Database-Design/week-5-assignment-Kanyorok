@@ -1,5 +1,8 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const dotenv = require('dotenv');
+
+dotenv.config({path: 'config/config.env'})
 
 
 // Question 1 goes here
@@ -14,9 +17,7 @@ const app = express()
 // Question 4 goes here
 
 
-
 // listen to the server
-const PORT = 3000
-app.listen(PORT, () => {
-  console.log(`server is runnig on http://localhost:${PORT}`)
+app.listen(process.env.PORT, () => {
+  console.log(`server is runnig on http://localhost:${process.env.PORT}`)
 })
