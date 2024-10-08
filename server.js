@@ -1,23 +1,12 @@
-const express = require('express');
-const app = express();
+const app = require('./app');
 const dotenv = require('dotenv');
 const sequelize = require('./config/sequelize');
+
 
 dotenv.config({path: 'config/config.env'});
 
 
-// Question 1 goes here
 
-
-// Question 2 goes here
-
-
-// Question 3 goes here
-
-
-// Question 4 goes here
-
-// connecting to database
 
 // listen to the server
 app.listen(process.env.PORT, () => {

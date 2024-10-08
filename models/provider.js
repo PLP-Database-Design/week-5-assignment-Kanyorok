@@ -68,3 +68,5 @@ const Provider = sequelize.define('Provider', {
         }
     },
 });
+
+module.exports = Provider;
