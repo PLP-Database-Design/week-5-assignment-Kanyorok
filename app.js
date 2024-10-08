@@ -15,6 +15,7 @@ app.use('/api/v1', provider);
 // Answer: http://localhost:3000/api/v1/patients?first_name=John
 
 // Question 4 goes here
+// Answer: http://localhost:3000/api/v1/providers?provider_speciality=Clinical
 
 module.exports = app;
 
