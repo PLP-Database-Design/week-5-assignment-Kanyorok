@@ -12,7 +12,7 @@ app.use('/api/v1', patient);
 app.use('/api/v1', provider);
 
 // Question 3 goes here
-
+// Answer: http://localhost:3000/api/v1/patients?first_name=John
 
 // Question 4 goes here
 
