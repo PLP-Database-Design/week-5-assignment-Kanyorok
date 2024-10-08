@@ -28,7 +28,7 @@ const Provider = sequelize.define('Provider', {
             }
         }
     },
-    provider_specialty: {
+    provider_speciality: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
@@ -41,31 +41,22 @@ const Provider = sequelize.define('Provider', {
             }
         }
     },
-    email: {
+    email_address: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
         validate: {
             isEmail: {
-                msg: 'Please enter a valid email address'
+               msg: 'Please enter a valid email address'
             },
             notEmpty: {
                 msg: 'Please enter your email'
             }
         }
     },
-    gender: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: {
-                msg: 'Please enter gender'
-            },
-            len: {
-                args: [0, 30],
-                msg: 'gender cannot be longer than 30 characters'
-            }
-        }
+    createdAt: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
     },
 });
 

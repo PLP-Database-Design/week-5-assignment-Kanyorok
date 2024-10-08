@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const patient = require('./routes/patient');
+const provider = require('./routes/provider');
 
 app.use(express.json());
 
@@ -8,7 +9,7 @@ app.use(express.json());
 app.use('/api/v1', patient);
 
 // Question 2 goes here
-
+app.use('/api/v1', provider);
 
 // Question 3 goes here
 
